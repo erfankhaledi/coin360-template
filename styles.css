@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+*, :after, :before {
+    box-sizing: inherit;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -106,6 +108,10 @@ nav ul li a:hover {
 }
 .absolute {
     position: absolute;
+}
+.green {
+    color: #84c47c;
+    line-height: 24px;
 }
 
 /* Navbar-Right */
@@ -306,8 +312,8 @@ nav ul li a:hover {
     justify-content: center;
     width: 40px;
     height: 42px;
-    margin-right: 5px;
-    margin-left: 10px;
+    margin-right: 8px;
+    margin-left: 12px;
     background-color: #2e2d2f;
     cursor: pointer;
     padding: 0 1px 0px 0px;
@@ -321,6 +327,7 @@ nav ul li a:hover {
 }
 
 /* Right-buttons Section (Watchlist) */
+
 .right-buttons {
     display: flex;
     align-items: center;
@@ -362,7 +369,7 @@ nav ul li a:hover {
 /* End Seconed Header Content */
 
 
-/* Start Main Section */
+/* Start Main Content */
 .main {
     display: flex;
     flex: 1 1;
@@ -370,19 +377,20 @@ nav ul li a:hover {
     height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
+    position: relative;
 }
-.main-start {
+.main-flex-row {
     display: flex;
     flex: 1 1;
     flex-direction: row;
 }
-.main-flex {
+.main-flex-col {
     display: flex;
     flex: 1 1;
     flex-direction: column;
 }
 .main-header {
-    position: fixed;
+    position: relative;
     z-index: 12;
     justify-content: space-between;
     width: 100%;
@@ -398,15 +406,15 @@ nav ul li a:hover {
     flex-direction: row;
     align-items: center;
 }
-.main-header .main-header-left .header-arrow-left {
+.main-header .main-header-left .back-icon {
     position: relative;
     z-index: 99;
 }
-.n5XWNB {
+.bg-zi {
     z-index: 1;
     background-color: #1d1f1e;
 }
-.dNECvi {
+.back-icon-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -418,21 +426,21 @@ nav ul li a:hover {
     border-radius: 6px;
     cursor: pointer;
 }
-.py-t {
+.pd-top {
     padding-top: 4px;
     color: red;
 }
 
-.main-header-left-flex {
+.header-left-btn {
     display: flex;
     align-items: baseline;
     transform: translateX(0);
     transition: transform .3s;
 }
-.er>* {
+.mr-4>* {
     margin-right: 4px;
 }
-.show-btn {
+.btn {
     position: relative;
     box-sizing: border-box;
     display: inline-flex;
@@ -448,14 +456,14 @@ nav ul li a:hover {
     transition: background-color .2s;
     color: hsla(0,0%,100%,.5);
 }
-.show-btn .show {
+.btn .btn-span {
     font-size: 14px;
     display: flex;
     align-items: center;
     height: 32px;
     white-space: nowrap;
 }
-.top-100 {
+.static-100 {
     position: static;
     box-sizing: border-box;
     width: 100%;
@@ -577,4 +585,287 @@ nav ul li a:hover {
     flex-shrink: 0;
     box-sizing: border-box;
     margin-left: 10px;
+}
+
+/* Start Main Header Right Content */
+.width-shadow {
+    z-index: 2;
+    min-width: 215px;
+    box-shadow: -15px 0 15px 0 #1d1f1e;
+}
+.main-header .main-header-right{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-top: -33px;
+    /* margin-right: 100px; */
+}
+
+.first-btn-flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 36px;
+    height: 25px;
+}
+.first-btn {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    background: #313333;
+    border-radius: 6px;
+    padding: 4px 10px;
+    margin-right: 4px;
+}
+.flex-m0 {
+    display: flex;
+    margin: 0;
+}
+.mr-7 {
+    margin-right: 7px;
+}
+div {
+    -webkit-tap-highlight-color: transparent;
+}
+.map-btn {
+    display: flex;
+    align-items: center;
+    margin-right: 4px;
+    padding: 4px 0 4px 9px;
+    background: #313333;
+    border-radius: 6px;
+}
+
+.share-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    min-width: 103px;
+    height: 32px;
+    color: #84c47c;
+    background: #313333;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.share-btn .fs-green {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #84c47c;
+}
+
+
+
+.bkfCzy {
+    display: flex;
+    flex: 1 1;
+    flex-direction: row;
+}
+.NQAD9v {
+    flex: 1 1;
+    background-color: #1d1f1e;
+}
+.hOKHhN {
+    position: relative;
+    overflow: hidden;
+}
+.CpEfBg {
+    position: fixed;
+    bottom: 44px;
+    left: 20px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+}
+.CpEfBg ._9Upbrr:first-child {
+    margin-top: 0;
+    border-radius: 2px 2px 0 0;
+}
+.CpEfBg ._9Upbrr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    margin-top: 2px;
+    background: #323333;
+    cursor: pointer;
+    opacity: .5;
+}
+
+/* Start BTC, ETH, ... */
+.hOKHhN ._556zxb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    overflow: hidden;
+    transform-origin: 0 0 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    perspective: 1000;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    text-size-adjust: none;
+}
+.fRHSri {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    overflow: hidden;
+}
+.fRHSri .d26ypj {
+    position: relative;
+    margin: 2px 0 0 2px;
+    padding: 0 0 25px;
+    color: #f0f0f1;
+    font-weight: 700;
+    line-height: 1em;
+    text-transform: capitalize;
+    text-overflow: ellipsis;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    text-size-adjust: none;
+}
+.fRHSri ._8JeoG_ {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 1px;
+    padding-right: 5px;
+}
+.fRHSri .LYhuVc {
+    display: inline-block;
+    width: 100%;
+    font-family: PlexSans,serif;
+    text-overflow: ellipsis;
+}
+.mTpAkD {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-weight: 400;
+    font-family: PlexSans,serif;
+    text-decoration: none;
+    text-shadow: 0.015em 0.015em 0 rgba(50,49,54,.28);
+    background: rgba(50,50,51,0);
+}
+.mTpAkD .k28UP7 {
+    position: relative;
+    color: #fff;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-shadow: 0.015em 0.015em 0 rgba(50,49,54,.28);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    text-size-adjust: none;
+}
+.mTpAkD ._66rAhH {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    transition: .2s;
+}
+.mTpAkD ._66rAhH path {
+    stroke: hsla(0,0%,100%,0)!important;
+    fill-opacity: 20%;
+}
+.mTpAkD ._7TaEAE {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    line-height: 1em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-shadow: 0.015em 0.015em 0 rgba(50,49,54,.28);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    text-size-adjust: none;
+}
+.mTpAkD .G9mNIj {
+    line-height: 1em;
+}
+.mTpAkD .G9mNIj, .mTpAkD .k28UP7 {
+    position: relative;
+    color: #fff;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-shadow: 0.015em 0.015em 0 rgba(50,49,54,.28);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    text-size-adjust: none;
+}
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+      'btc btc btc' 
+      'btc btc btc' 
+      'btc btc btc'
+      ;
+    grid-gap: 100px;
+    justify-content: flex-start;
+}
+
+.BTC {
+    font-size: 20px;
+    text-align: center;
+    padding: 25px;
+    background-color: #67c970;
+    border: 1px solid yellow;
+    grid-area: btc;
+}
+
+.ETH {
+    font-size: 20px;
+    text-align: center;
+    padding: 25px;
+    background-color: #67c970;
+    border: 1px solid yellow;
+    grid-area: eth;
+}
+
+.BNB {
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+    background-color: #67c970;
+    border: 1px solid yellow;
+    grid-area: bnb;
+}
+
+.XRP {
+    font-size: 20px;
+    text-align: center;
+    padding: 1px;
+    background-color: #67c970;
+    border: 1px solid yellow;
+    grid-area: xrp;
 }
