@@ -6,10 +6,11 @@
     box-sizing: inherit;
 }
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", Arial,Helvetica,sans-serif;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    overflow-y: hidden;
     background-color: #1D1F1E;
 }
 
@@ -18,7 +19,7 @@ header {
     position: relative;
     z-index: 90;
     height: 40px;
-    font-family: Roboto,Arial,Helvetica,sans-serif;
+    font-family: "Roboto", Arial,Helvetica,sans-serif;
     font-size: 14px;
     font-weight: 400;
     transition: top .5s;
@@ -376,8 +377,9 @@ nav ul li a:hover {
     flex-flow: column nowrap;
     height: 100%;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
     position: relative;
+
 }
 .main-flex-row {
     display: flex;
@@ -400,6 +402,8 @@ nav ul li a:hover {
     font-size: 14px;
     font-family: Roboto,Arial,Helvetica,sans-serif;
     background-color: #1d1f1e;
+    overflow: hidden;
+
 }
 .main-header .main-header-left {
     display: flex;
@@ -410,10 +414,10 @@ nav ul li a:hover {
     position: relative;
     z-index: 99;
 }
-.bg-zi {
+.z-1 {
     z-index: 1;
-    background-color: #1d1f1e;
 }
+
 .back-icon-container {
     display: flex;
     align-items: center;
@@ -422,9 +426,12 @@ nav ul li a:hover {
     height: 32px;
     margin-right: 4px;
     margin-left: 4px;
-    background-color: #313333;
+    background-color: #2a2b2b;
     border-radius: 6px;
     cursor: pointer;
+}
+.back-icon-container:hover {
+    background-color: #333;
 }
 .pd-top {
     padding-top: 4px;
@@ -436,6 +443,9 @@ nav ul li a:hover {
     align-items: baseline;
     transform: translateX(0);
     transition: transform .3s;
+}
+.hover:hover {
+    background-color: #333333;
 }
 .mr-4>* {
     margin-right: 4px;
@@ -598,8 +608,8 @@ nav ul li a:hover {
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-end;
+    padding: 1px;
     margin-top: -33px;
-    /* margin-right: 100px; */
 }
 
 .first-btn-flex {
@@ -763,13 +773,14 @@ div {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     overflow: hidden;
     font-weight: 400;
-    font-family: PlexSans,serif;
+    font-family: Roboto, Arial,Helvetica,sans-serif;
     text-decoration: none;
     text-shadow: 0.015em 0.015em 0 rgba(50,49,54,.28);
     background: rgba(50,50,51,0);
+    opacity: 0.9;
 }
 .mTpAkD .k28UP7 {
     position: relative;
@@ -807,6 +818,7 @@ div {
     -webkit-text-size-adjust: none;
     -moz-text-size-adjust: none;
     text-size-adjust: none;
+
 }
 .mTpAkD .G9mNIj {
     line-height: 1em;
@@ -823,49 +835,50 @@ div {
     -moz-text-size-adjust: none;
     text-size-adjust: none;
 }
-.grid-container {
+/* .mTpAkD .gO_9jc {
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0.015em 0.015em 0 rgba(50,49,54,.28);
+    bottom: -10px;
+} */
+
+/* currencies */
+
+.currencies {
+    margin-top: 10px;
     display: grid;
-    grid-template-areas: 
-      'btc btc btc' 
-      'btc btc btc' 
-      'btc btc btc'
-      ;
-    grid-gap: 100px;
-    justify-content: flex-start;
+    grid-template-columns: 860px 520px auto auto auto auto;
+    grid-template-rows: 688px;
+    text-align: center;
+    background-color: #7EC17E;
+    color: #fff;
 }
 
-.BTC {
-    font-size: 20px;
-    text-align: center;
-    padding: 25px;
-    background-color: #67c970;
-    border: 1px solid yellow;
-    grid-area: btc;
+.currencies >div {
+    border: 0.1px solid #000000;
+}
+.currencies >div:hover {
+    border: 3.5px solid #ffa500;
+    transition: 0s;
 }
 
-.ETH {
-    font-size: 20px;
+.text-center {
     text-align: center;
-    padding: 25px;
-    background-color: #67c970;
-    border: 1px solid yellow;
-    grid-area: eth;
+    margin-top: 40%;
 }
 
-.BNB {
-    font-size: 20px;
-    text-align: center;
-    padding: 15px;
-    background-color: #67c970;
-    border: 1px solid yellow;
-    grid-area: bnb;
+.fs-10 {
+    font-size: 112px;
 }
-
-.XRP {
-    font-size: 20px;
+.eth {
+    width: 520px;
+    height: 400px;
+}
+.sol {
+    width: 120px; /* Adjust width as needed */
+    grid-column: 1 / 2; /* Span across two columns */
     text-align: center;
-    padding: 1px;
-    background-color: #67c970;
-    border: 1px solid yellow;
-    grid-area: xrp;
+    color: #fff;
+    background-color: #7EC17E; /* Or any other background color you desire */
 }
