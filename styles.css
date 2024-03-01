@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: auto;
     background-color: #1D1F1E;
 }
 
@@ -844,12 +844,24 @@ div {
 } */
 
 /* currencies */
+.flex {
+    display: flex;
+}
+.flex-col {
+    flex-direction: column;
+}
+.flex-row {
+    flex-direction: row;
+}
+.justify-start {
+    justify-content: flex-start;
+}
 
 .currencies {
     margin-top: 10px;
     display: grid;
-    grid-template-columns: 860px 520px auto auto auto auto;
-    grid-template-rows: 688px;
+    grid-template-columns: 860px 520px 160px 120px 120px auto;
+    grid-template-rows: auto;
     text-align: center;
     background-color: #7EC17E;
     color: #fff;
@@ -858,10 +870,13 @@ div {
 .currencies >div {
     border: 0.1px solid #000000;
 }
-.currencies >div:hover {
-    border: 3.5px solid #ffa500;
-    transition: 0s;
+
+.seconed-part {
+    display: grid;
+    grid-template-columns: 100px;
+    border: 1px solid red;
 }
+
 
 .text-center {
     text-align: center;
@@ -872,13 +887,87 @@ div {
     font-size: 112px;
 }
 .eth {
-    width: 520px;
-    height: 400px;
+    height: 408px;
+    border: 0.1rem solid #518651;
+    border-bottom-color: #84c47c;
+    border-left-color: #84c47c;
+}
+
+.eth:hover {
+    border: 0.2rem solid #F8A707;
+}
+.btc:hover {
+    border: 0.2rem solid #F8A707;
+}
+
+.below-eth {
+    border: 1px solid #7EC17E;
+    border-left: none;
+    /* height: 280px; */
+    display: flex;
+    justify-content: flex-start;
+}
+/* .below-eth .justify-start>div:hover {
+    border-color: yellow;
+} */
+.bnb, .sol, .ava, .xrp {
+    border: 1px solid #518651;
+}
+.ava {
+    border-left-color: #000;
+}
+.xrp {
+    border-left-color: #000;
 }
 .sol {
-    width: 120px; /* Adjust width as needed */
-    grid-column: 1 / 2; /* Span across two columns */
-    text-align: center;
+    border-top-color: #000;
+    border-left-color: #000;
+}
+.bnb {
+    border-top-color: #000;
+}
+.bnb a {
+    /* width: 155px; */
+    list-style-type: none;
+    text-decoration: none;
     color: #fff;
-    background-color: #7EC17E; /* Or any other background color you desire */
+}
+a{
+    list-style-type: none;
+    text-decoration: none;
+    color: #fff;
+}
+.sol {
+    background-color: #518651; 
+}
+.sol:hover {
+    border: 0.2rem solid #F8A707;
+}
+.xrp:hover {
+    border: 0.2rem solid #F8A707;
+}
+.bnb {
+    background-color: #ED7171;
+    height: auto;
+}
+.bnb:hover {
+    border: 0.2rem solid #F8A707;
+}
+.ava {
+    background-color: #518651;
+}
+.ava:hover {
+    border: 0.2rem solid #F8A707;
+}
+.avax {
+    background-color: #518651;
+    border: 1px solid black;
+    height: 156px;
+    width: 129px;
+}
+.doge {
+    background-color: #518651;
+    width: 129px;
+    border: 1px solid black;
+    height: 160px;
 }
