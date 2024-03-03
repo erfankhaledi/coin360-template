@@ -861,7 +861,7 @@ div {
 .currencies {
     margin-top: 10px;
     display: grid;
-    grid-template-columns: 860px 520px 537px;
+    grid-template-columns: 860px 520px 250px auto;
     grid-template-rows: auto;
     text-align: center;
     background-color: #7EC17E;
@@ -967,10 +967,20 @@ a{
     width: 250px;
     height: 160px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+.container-1 {
+    width: 250px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(1, 1fr);
 }
 .container > a {
+    border: 1px solid red;
+}
+.container-1 > a {
     border: 1px solid red;
 }
 .item-1 {
