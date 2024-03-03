@@ -9,9 +9,10 @@ body {
     font-family: "Roboto", Arial,Helvetica,sans-serif;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow-x: auto;
     overflow-y: auto;
     background-color: #1D1F1E;
+    direction: ltr;
 }
 
 /* Start Header Section */
@@ -860,7 +861,7 @@ div {
 .currencies {
     margin-top: 10px;
     display: grid;
-    grid-template-columns: 860px 520px 160px 120px 120px auto;
+    grid-template-columns: 860px 520px 537px;
     grid-template-rows: auto;
     text-align: center;
     background-color: #7EC17E;
@@ -955,19 +956,29 @@ a{
 }
 .ava {
     background-color: #518651;
+    height: auto;
 }
 .ava:hover {
     border: 0.2rem solid #F8A707;
 }
-.avax {
-    background-color: #518651;
-    border: 1px solid black;
-    height: 156px;
-    width: 129px;
-}
-.doge {
-    background-color: #518651;
-    width: 129px;
-    border: 1px solid black;
+
+/* Right side of a ETH */
+.container {
+    width: 250px;
     height: 160px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+.container > a {
+    border: 1px solid red;
+}
+.item-1 {
+    background-color: #518651;
+    border: 1px solid #518651;
+}
+
+
+.item-1:hover {
+    border: 0.2rem solid #F8A707;
 }
