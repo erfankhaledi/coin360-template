@@ -37,7 +37,11 @@ header {
 .top-header {
     margin-bottom: -4px;
 }
-
+a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #fff;
+}
 nav ul {
     list-style: none;
     display: flex;
@@ -844,7 +848,6 @@ div {
     bottom: -10px;
 } */
 
-/* currencies */
 .flex {
     display: flex;
 }
@@ -857,138 +860,188 @@ div {
 .justify-start {
     justify-content: flex-start;
 }
-
-.currencies {
-    margin-top: 10px;
-    display: grid;
-    grid-template-columns: 860px 520px 250px auto;
-    grid-template-rows: auto;
-    text-align: center;
-    background-color: #7EC17E;
-    color: #fff;
+.justify-between {
+    justify-content: space-between;
 }
-
-.currencies >div {
-    border: 0.1px solid #000000;
-}
-
-.seconed-part {
-    display: grid;
-    grid-template-columns: 100px;
-    border: 1px solid red;
-}
-
-
 .text-center {
     text-align: center;
     margin-top: 40%;
 }
-
-.fs-10 {
+.bg-green {
+    background-color: #7ec17f;
+}
+.bg-red {
+    background-color: #ED7171;
+}
+.bg-dark-green {
+    background-color: #518651;
+}
+.fs-112 {
     font-size: 112px;
 }
-.eth {
-    height: 408px;
-    border: 0.1rem solid #518651;
-    border-bottom-color: #84c47c;
-    border-left-color: #84c47c;
+.border-hover:hover {
+    border: 0.2rem solid #FFA500;
 }
 
-.eth:hover {
-    border: 0.2rem solid #F8A707;
+/* currencies SECTION */
+.currencies {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 44% 2.2% 19% 19.2% auto;
+    grid-template-rows: 680px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
 }
-.btc:hover {
-    border: 0.2rem solid #F8A707;
+.currencies > div {
+    border: 0.1px solid #1b1616;
 }
 
-.below-eth {
-    border: 1px solid #7EC17E;
-    border-left: none;
-    /* height: 280px; */
-    display: flex;
-    justify-content: flex-start;
+/* Container */
+.container-1 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
 }
-/* .below-eth .justify-start>div:hover {
-    border-color: yellow;
-} */
-.bnb, .sol, .ava, .xrp {
-    border: 1px solid #518651;
+
+.container-2 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 48% 40% 8% 4.1%;
 }
-.ava {
-    border-left-color: #000;
+
+.container-3 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 82% 18%;
+    margin-left: 3px;
+}
+
+.container-4 {
+    width: 220px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 190px 140px;
+    border: 0.5px solid #000;
+    border-left-color: #ED7171;
+}
+.container-4 > a {
+    border: 1px solid none;
 }
 .xrp {
-    border-left-color: #000;
-}
-.sol {
+    border: 1px solid #ED7171;
     border-top-color: #000;
-    border-left-color: #000;
-}
-.bnb {
-    border-top-color: #000;
-}
-.bnb a {
-    /* width: 155px; */
-    list-style-type: none;
-    text-decoration: none;
-    color: #fff;
-}
-a{
-    list-style-type: none;
-    text-decoration: none;
-    color: #fff;
-}
-.sol {
-    background-color: #518651; 
-}
-.sol:hover {
-    border: 0.2rem solid #F8A707;
-}
-.xrp:hover {
-    border: 0.2rem solid #F8A707;
-}
-.bnb {
-    background-color: #ED7171;
-    height: auto;
-}
-.bnb:hover {
-    border: 0.2rem solid #F8A707;
-}
-.ava {
-    background-color: #518651;
-    height: auto;
-}
-.ava:hover {
-    border: 0.2rem solid #F8A707;
 }
 
-/* Right side of a ETH */
-.container {
-    width: 250px;
-    height: 160px;
+.container-5 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: 100%;
+    grid-template-rows: 170px 160px;
+    border: 1px solid #000;
+    border-left-color: #ED7171;
+    width: 150px;
 }
-.container-1 {
+.container-5 > a {
+    border: 1px solid none;
+}
+.avax {
+    border: 1px solid #ED7171;
+    border-top-color: #000;
+}
+.container-6 {
+    width: 200px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 90px 90px;
+}
+.container-6 > a {
+    border: 1px solid #000;
+    border-right-color: #000;
+    border-top-color: #ED7171;
+    border-left-color: #7ec17f;
+}
+.container-7 {
+    width: 165px;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+
+.container-7 > a {
+    border: 1px solid #000;
+    border-top-color: #ED7171;
+    border-left: #7ec17f;
+}
+.container-8 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px;
+}
+.container-8 > a {
+    border: 1px solid #000;
+    border-top-color: #7ec17f;
+    border-left-color: #7ec17f;
+}
+.container-9 {
+    display: grid;
+    grid-template-columns: 80px;
+    grid-template-rows: 90px 76px;
+}
+.container-9 > a {
+    border: 1px solid none;
+    transition: border-color 0ms;
+    transition-duration: 0ms;
+}
+.container-10 {
+    display: grid;
+    grid-template-columns: repeat(1, 125px);
+    grid-template-rows: repeat(3, 55px);
+}
+.container-10 {
+    border: 1px solid #000;
+    border-top-color: #7ec17f;
+}
+.container-10 > a {
+    border: none;
+}
+.container-11 {
+    display: grid;
+    grid-template-columns: 118.21%;
+    grid-template-rows: 50px;
+}
+.container-12 {
+    display: grid;
+    grid-template-columns: repeat(3, 33.2%) ;
+    grid-template-rows: 42px;
+}
+.container-13 {
+    display: grid;
+    grid-template-columns: repeat(2, 50%) ;
+    grid-template-rows: 42px;
+}
+.container-14 {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 32px;
+}
+
+
+
+/* 
+.ltc {
+    width: 100px;
+    height: 105px;
+} */
+
+
+.container-300 {
     width: 250px;
     height: 100px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(1, 1fr);
 }
-.container > a {
-    border: 1px solid red;
-}
-.container-1 > a {
-    border: 1px solid red;
-}
-.item-1 {
-    background-color: #518651;
-    border: 1px solid #518651;
-}
 
 
-.item-1:hover {
-    border: 0.2rem solid #F8A707;
-}
+
