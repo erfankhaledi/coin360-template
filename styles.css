@@ -68,6 +68,15 @@ nav ul li a:hover {
 .items-center {
     align-items: center;
 }
+.items-end {
+    align-items: flex-end;
+}
+.items-start {
+    align-items: flex-start;
+}
+.justify-center {
+    justify-content: center;
+}
 .active {
     color: #67c970;
 }
@@ -887,9 +896,10 @@ div {
 .currencies {
     margin-top: 10px;
     display: grid;
-    grid-template-columns: 44% 2.2% 19% 19.2% auto;
-    grid-template-rows: 680px;
-    text-align: center;
+    grid-template-columns: 44% 2% 18.5% 15%;
+    width: auto;
+    height: 680px;
+    text-align:center;
     background-color: #000;
     color: #fff;
 }
@@ -903,145 +913,73 @@ div {
     grid-template-columns: 100%;
     grid-template-rows: 100%;
 }
+.btc {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
 
 .container-2 {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 48% 40% 8% 4.1%;
+    grid-template-rows: 50% 39% 7% 4%;
 }
 
 .container-3 {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 82% 18%;
-    margin-left: 3px;
+    grid-template-rows: 80% 20%;
+    margin-left: 4px;
 }
 
+/* Container-4 (SOL, AVAX, ...) */
 .container-4 {
-    width: 220px;
+    width: 100%;
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 190px 140px;
-    border: 0.5px solid #000;
-    border-left-color: #ED7171;
+    grid-template-columns: 80px 80px 80px 30px 40px 80px 100px;
+    grid-template-rows: 100px 200px 50px 50px;
+    grid-template-areas:
+                        'sol sol  xrp xrp xrp xrp'
+                        'sol sol avax avax ada ada'
+                        'sol sol avax avax ada ada'
+                        'dot dot trx trx ltc icp '
+                        'dot dot trx trx atom etc'
+                        ;
+                        
 }
-.container-4 > a {
-    border: 1px solid none;
+.atom {
+    grid-area: atom;
+}
+.arb {
+    grid-area: arb;
+}
+.etc {
+    grid-area: etc;
+}
+.icp {
+    grid-area: icp;
+}
+.ltc {
+    grid-area: ltc;
+}
+.trx {
+    grid-area: trx;
+}
+.dot {
+    grid-area: dot;
+}
+
+.sol {
+    grid-area: sol;
 }
 .xrp {
-    border: 1px solid #ED7171;
-    border-top-color: #000;
+    grid-area: xrp;
 }
-
-.container-5 {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 170px 160px;
-    border: 1px solid #000;
-    border-left-color: #ED7171;
-    width: 150px;
-}
-.container-5 > a {
-    border: 1px solid none;
+.ada {
+    grid-area: ada;
 }
 .avax {
-    border: 1px solid #ED7171;
-    border-top-color: #000;
+    grid-area: avax;
 }
-.container-6 {
-    width: 200px;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 90px 90px;
-}
-.container-6 > a {
-    border: 1px solid #000;
-    border-right-color: #000;
-    border-top-color: #ED7171;
-    border-left-color: #7ec17f;
-}
-.container-7 {
-    width: 165px;
-    height: 80px;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
-}
-
-.container-7 > a {
-    border: 1px solid #000;
-    border-top-color: #ED7171;
-    border-left: #7ec17f;
-}
-.container-8 {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100px;
-}
-.container-8 > a {
-    border: 1px solid #000;
-    border-top-color: #7ec17f;
-    border-left-color: #7ec17f;
-}
-.container-9 {
-    display: grid;
-    grid-template-columns: 80px;
-    grid-template-rows: 90px 76px;
-}
-.container-9 > a {
-    border: 1px solid none;
-    transition: border-color 0ms;
-    transition-duration: 0ms;
-}
-.container-10 {
-    display: grid;
-    grid-template-columns: repeat(1, 125px);
-    grid-template-rows: repeat(3, 55px);
-}
-.container-10 {
-    border: 1px solid #000;
-    border-top-color: #7ec17f;
-}
-.container-10 > a {
-    border: none;
-}
-.container-11 {
-    display: grid;
-    grid-template-columns: 118.21%;
-    grid-template-rows: 50px;
-}
-.container-12 {
-    display: grid;
-    grid-template-columns: repeat(3, 33.2%) ;
-    grid-template-rows: 42px;
-}
-.container-13 {
-    display: grid;
-    grid-template-columns: repeat(2, 50%) ;
-    grid-template-rows: 42px;
-}
-.container-14 {
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: 32px;
-}
-
-
-
-/* 
-.ltc {
-    width: 100px;
-    height: 105px;
-} */
-
-
-.container-300 {
-    width: 250px;
-    height: 100px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-}
-
 
 
