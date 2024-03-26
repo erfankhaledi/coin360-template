@@ -849,13 +849,13 @@ div {
     -moz-text-size-adjust: none;
     text-size-adjust: none;
 }
-/* .mTpAkD .gO_9jc {
-    position: absolute;
+ .gO_9jc {
+    position: relative;
     color: #fff;
     text-align: center;
     text-shadow: 0.015em 0.015em 0 rgba(50,49,54,.28);
-    bottom: -10px;
-} */
+    bottom: -90px;
+}
 
 .flex {
     display: flex;
@@ -902,9 +902,7 @@ div {
     text-align:center;
     background-color: #000;
     color: #fff;
-}
-.currencies > div {
-    border: 0.1px solid #1b1616;
+    gap: 1px;
 }
 
 /* Container */
@@ -936,16 +934,49 @@ div {
 .container-4 {
     width: 100%;
     display: grid;
-    grid-template-columns: 80px 80px 80px 30px 40px 80px 100px;
-    grid-template-rows: 100px 200px 50px 50px;
+    gap: 1px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
     grid-template-areas:
-                        'sol sol  xrp xrp xrp xrp'
-                        'sol sol avax avax ada ada'
-                        'sol sol avax avax ada ada'
-                        'dot dot trx trx ltc icp '
-                        'dot dot trx trx atom etc'
-                        ;
-                        
+                        'sol sol sol xrp xrp xrp xrp'
+                        'sol sol sol xrp xrp xrp xrp'
+                        'sol sol sol avax avax ada ada'
+                        'sol sol sol avax avax ada ada'
+                        'sol sol sol avax avax ada ada'
+                        'sol sol sol avax avax ada ada'
+                        'sol sol sol avax avax ada ada'
+                        'sol sol sol avax avax ada ada'
+                        'sol sol sol avax avax ada ada'
+                        'sol sol sol avax avax ada ada'
+                        'sol sol sol avax avax ada ada'
+                        'dot dot trx trx ltc icp arb'
+                        'dot dot trx trx ltc icp arb'
+                        'dot dot trx trx imx imx arb'
+                        'matic matic kas kas atom etc arb'
+                        'matic matic kas kas atom etc arb'
+                        'matic matic kas kas atom etc pyu'
+                        'matic matic kas kas atom etc op'
+                        'matic matic kas kas atom apt apt'
+
+
+
+
+                                                ;
+}
+.apt {
+    grid-area: apt;
+}
+.op {
+    grid-area: op;
+}
+.pyu {
+    grid-area: pyu;
+}
+.imx {
+    grid-area: imx;
+}
+.kas {
+    grid-area: kas;
 }
 .atom {
     grid-area: atom;
@@ -968,7 +999,6 @@ div {
 .dot {
     grid-area: dot;
 }
-
 .sol {
     grid-area: sol;
 }
@@ -980,6 +1010,9 @@ div {
 }
 .avax {
     grid-area: avax;
+}
+.matic {
+    grid-area: matic;
 }
 
 
