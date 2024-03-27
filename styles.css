@@ -896,7 +896,7 @@ div {
 .currencies {
     margin-top: 10px;
     display: grid;
-    grid-template-columns: 44% 2% 18.5% 15%;
+    grid-template-columns: 44% 2% 18% 19%;
     width: auto;
     height: 680px;
     text-align:center;
@@ -930,38 +930,66 @@ div {
     margin-left: 4px;
 }
 
-/* Container-4 (SOL, AVAX, ...) */
+/* Container-4 (SOL, AVAX, XRP, ...) */
 .container-4 {
     width: 100%;
     display: grid;
     gap: 1px;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas:
-                        'sol sol sol xrp xrp xrp xrp'
-                        'sol sol sol xrp xrp xrp xrp'
-                        'sol sol sol avax avax ada ada'
-                        'sol sol sol avax avax ada ada'
-                        'sol sol sol avax avax ada ada'
-                        'sol sol sol avax avax ada ada'
-                        'sol sol sol avax avax ada ada'
-                        'sol sol sol avax avax ada ada'
-                        'sol sol sol avax avax ada ada'
-                        'sol sol sol avax avax ada ada'
-                        'sol sol sol avax avax ada ada'
-                        'dot dot trx trx ltc icp arb'
-                        'dot dot trx trx ltc icp arb'
-                        'dot dot trx trx imx imx arb'
-                        'matic matic kas kas atom etc arb'
-                        'matic matic kas kas atom etc arb'
-                        'matic matic kas kas atom etc pyu'
-                        'matic matic kas kas atom etc op'
-                        'matic matic kas kas atom apt apt'
+                        'sol sol sol sol xrp xrp xrp xrp xrp xrp'
+                        'sol sol sol sol xrp xrp xrp xrp xrp xrp'
+                        'sol sol sol sol xrp xrp xrp xrp xrp xrp'
+                        'sol sol sol sol xrp xrp xrp xrp xrp xrp'
+                        'sol sol sol sol xrp xrp xrp xrp xrp xrp'
+                        'sol sol sol sol xrp xrp xrp xrp xrp xrp'
+                        'sol sol sol sol avax avax avax ada ada ada'
+                        'sol sol sol sol avax avax avax ada ada ada'
+                        'sol sol sol sol avax avax avax ada ada ada'
+                        'sol sol sol sol avax avax avax ada ada ada'
+                        'sol sol sol sol avax avax avax ada ada ada'
+                        'sol sol sol sol avax avax avax ada ada ada'
+                        'sol sol sol sol avax avax avax ada ada ada'
+                        'sol sol sol sol avax avax avax ada ada ada'
+                        'sol sol sol sol avax avax avax ada ada ada'
+                        'dot dot dot trx trx trx apt apt ltc ltc'
+                        'dot dot dot trx trx trx apt apt ltc ltc'
+                        'dot dot dot trx trx trx atom etc arb arb'
+                        'dot dot dot trx trx trx atom etc arb arb'
+                        'dot dot dot trx trx trx atom etc arb arb'
+                        'matic matic matic matic matic matic imx imx kas kas'
+                        'icp icp icp near near near xlm xlm ftm tia'
+                        'icp icp icp near near near op vet algo cfx'
+                        'icp icp icp near near near op vet flow qnt';
+}
 
-
-
-
-                                                ;
+.cfx {
+    grid-area: cfx;
+}
+.qnt {
+    grid-area: qnt;
+}
+.flow {
+    grid-area: flow;
+}
+.algo {
+    grid-area: algo;
+}
+.vet {
+    grid-area: vet;
+}
+.near {
+    grid-area: near;
+}
+.tia {
+    grid-area: tia;
+}
+.ftm {
+    grid-area: ftm;
+}
+.xlm {
+    grid-area: xlm;
 }
 .apt {
     grid-area: apt;
