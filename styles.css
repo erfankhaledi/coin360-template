@@ -11,7 +11,7 @@ body {
     padding: 0;
     overflow-x: auto;
     overflow-y: auto;
-    background-color: #1D1F1E;
+    background-color: #1d1f1e;
     direction: ltr;
 }
 
@@ -854,7 +854,7 @@ div {
     color: #fff;
     text-align: center;
     text-shadow: 0.015em 0.015em 0 rgba(50,49,54,.28);
-    bottom: -90px;
+    bottom: 0px;
 }
 
 .flex {
@@ -897,8 +897,7 @@ div {
     margin-top: 10px;
     display: grid;
     grid-template-columns: 44% 2% 18% 19%;
-    width: auto;
-    height: 680px;
+    grid-template-rows: 100%;
     text-align:center;
     background-color: #000;
     color: #fff;
