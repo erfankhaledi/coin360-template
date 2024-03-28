@@ -896,12 +896,13 @@ div {
 .currencies {
     margin-top: 10px;
     display: grid;
-    grid-template-columns: 44% 2% 18% 19%;
-    grid-template-rows: 100%;
+    grid-template-columns: 44% 2% 18% 18% 18%;
+    grid-template-rows: auto;
     text-align:center;
     background-color: #000;
     color: #fff;
     gap: 1px;
+    z-index: 1000;
 }
 
 /* Container */
@@ -925,7 +926,7 @@ div {
 .container-3 {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 80% 20%;
+    grid-template-rows: 75% 25%;
     margin-left: 4px;
 }
 
@@ -933,38 +934,99 @@ div {
 .container-4 {
     width: 100%;
     display: grid;
-    gap: 1px;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
+    gap: 0.99px;
+    grid-template-columns: 0.5rem ;
+    grid-template-rows: 2rem;
     grid-template-areas:
-                        'sol sol sol sol xrp xrp xrp xrp xrp xrp'
-                        'sol sol sol sol xrp xrp xrp xrp xrp xrp'
-                        'sol sol sol sol xrp xrp xrp xrp xrp xrp'
-                        'sol sol sol sol xrp xrp xrp xrp xrp xrp'
-                        'sol sol sol sol xrp xrp xrp xrp xrp xrp'
-                        'sol sol sol sol xrp xrp xrp xrp xrp xrp'
-                        'sol sol sol sol avax avax avax ada ada ada'
-                        'sol sol sol sol avax avax avax ada ada ada'
-                        'sol sol sol sol avax avax avax ada ada ada'
-                        'sol sol sol sol avax avax avax ada ada ada'
-                        'sol sol sol sol avax avax avax ada ada ada'
-                        'sol sol sol sol avax avax avax ada ada ada'
-                        'sol sol sol sol avax avax avax ada ada ada'
-                        'sol sol sol sol avax avax avax ada ada ada'
-                        'sol sol sol sol avax avax avax ada ada ada'
-                        'dot dot dot trx trx trx apt apt ltc ltc'
-                        'dot dot dot trx trx trx apt apt ltc ltc'
-                        'dot dot dot trx trx trx atom etc arb arb'
-                        'dot dot dot trx trx trx atom etc arb arb'
-                        'dot dot dot trx trx trx atom etc arb arb'
-                        'matic matic matic matic matic matic imx imx kas kas'
-                        'icp icp icp near near near xlm xlm ftm tia'
-                        'icp icp icp near near near op vet algo cfx'
-                        'icp icp icp near near near op vet flow qnt';
+                        'sol sol sol sol sol xrp xrp xrp xrp xrp xrp'
+                        'sol sol sol sol sol xrp xrp xrp xrp xrp xrp'
+                        'sol sol sol sol sol xrp xrp xrp xrp xrp xrp'
+                        'sol sol sol sol sol xrp xrp xrp xrp xrp xrp'
+                        'sol sol sol sol sol xrp xrp xrp xrp xrp xrp'
+                        'sol sol sol sol sol xrp xrp xrp xrp xrp xrp'
+                        'sol sol sol sol sol xrp xrp xrp xrp xrp xrp'
+                        'sol sol sol sol sol xrp xrp xrp xrp xrp xrp'
+                        'sol sol sol sol sol xrp xrp xrp xrp xrp xrp'
+                        'sol sol sol sol sol xrp xrp xrp xrp xrp xrp'
+                        'sol sol sol sol sol xrp xrp xrp xrp xrp xrp'
+                        'sol sol sol sol sol xrp xrp xrp xrp xrp xrp'
+                        'sol sol sol sol sol avax avax avax ada ada ada'
+                        'sol sol sol sol sol avax avax avax ada ada ada'
+                        'sol sol sol sol sol avax avax avax ada ada ada'
+                        'sol sol sol sol sol avax avax avax ada ada ada'
+                        'sol sol sol sol sol avax avax avax ada ada ada'
+                        'sol sol sol sol sol avax avax avax ada ada ada'
+                        'sol sol sol sol sol avax avax avax ada ada ada'
+                        'sol sol sol sol sol avax avax avax ada ada ada'
+                        'sol sol sol sol sol avax avax avax ada ada ada'
+                        'sol sol sol sol sol avax avax avax ada ada ada'
+                        'sol sol sol sol sol avax avax avax ada ada ada'
+                        'sol sol sol sol sol avax avax avax ada ada ada'
+                        'sol sol sol sol sol avax avax avax ada ada ada'
+                        'sol sol sol sol sol avax avax avax ada ada ada'
+                        'sol sol sol sol sol avax avax avax ada ada ada'
+                        'sol sol sol sol sol avax avax avax ada ada ada'
+                        'sol sol sol sol sol avax avax avax ada ada ada'
+                        'sol sol sol sol sol avax avax avax ada ada ada'
+                        'sol sol sol sol sol avax avax avax ada ada ada'
+                        'sol sol sol sol sol avax avax avax ada ada ada'
+                        'sol sol sol sol sol avax avax avax ada ada ada'
+                        'sol sol sol sol sol avax avax avax ada ada ada'
+                        'sol sol sol sol sol avax avax avax ada ada ada'
+                        'dot dot dot trx trx trx apt apt ltc ltc ltc'
+                        'dot dot dot trx trx trx apt apt ltc ltc ltc'
+                        'dot dot dot trx trx trx apt apt ltc ltc ltc'
+                        'dot dot dot trx trx trx apt apt ltc ltc ltc'
+                        'dot dot dot trx trx trx apt apt ltc ltc ltc'
+                        'dot dot dot trx trx trx apt apt ltc ltc ltc'
+                        'dot dot dot trx trx trx apt apt ltc ltc ltc'
+                        'dot dot dot trx trx trx apt apt ltc ltc ltc'
+                        'dot dot dot trx trx trx apt apt ltc ltc ltc'
+                        'dot dot dot trx trx trx apt apt ltc ltc ltc'
+                        'dot dot dot trx trx trx apt apt ltc ltc ltc'
+                        'dot dot dot trx trx trx atom etc etc arb arb'
+                        'dot dot dot trx trx trx atom etc etc arb arb'
+                        'dot dot dot trx trx trx atom etc etc arb arb'
+                        'dot dot dot trx trx trx atom etc etc arb arb'
+                        'dot dot dot trx trx trx atom etc etc arb arb'
+                        'dot dot dot trx trx trx atom etc etc arb arb'
+                        'dot dot dot trx trx trx atom etc etc arb arb'
+                        'dot dot dot trx trx trx atom etc etc arb arb'
+                        'dot dot dot trx trx trx atom etc etc arb arb'
+                        'dot dot dot trx trx trx atom etc etc arb arb'
+                        'dot dot dot trx trx trx atom etc etc arb arb'
+                        'matic matic matic matic matic matic imx imx kas kas kas'
+                        'matic matic matic matic matic matic imx imx kas kas kas'
+                        'matic matic matic matic matic matic imx imx kas kas kas'
+                        'matic matic matic matic matic matic imx imx kas kas kas'
+                        'matic matic matic matic matic matic imx imx kas kas kas'
+                        'matic matic matic matic matic matic imx imx kas kas kas'
+                        'icp icp icp near near xlm xlm xlm ftm tia tia'
+                        'icp icp icp near near xlm xlm xlm ftm tia tia'
+                        'icp icp icp near near xlm xlm xlm ftm tia tia'
+                        'icp icp icp near near xlm xlm xlm ftm tia tia'
+                        'icp icp icp near near xlm xlm xlm ftm tia tia'
+                        'icp icp icp near near xlm xlm xlm ftm tia tia'
+                        'icp icp icp near near op op vet vet algo cfx'
+                        'icp icp icp near near op op vet vet algo cfx'
+                        'icp icp icp near near op op vet vet algo cfx'
+                        'icp icp icp near near op op vet vet algo cfx'
+                        'icp icp icp near near op op vet vet flow qnt'
+                        'icp icp icp near near op op vet vet flow qnt'
+                        'icp icp icp near near op op vet vet flow qnt'
+                        'icp icp icp near near op op vet vet flow qnt';
+
+}
+.container-5 {
+    display: grid;
+    grid-template-columns: 97%;
+    grid-template-rows: 50%;
+    margin-left: 10px;
 }
 
 .cfx {
     grid-area: cfx;
+    
 }
 .qnt {
     grid-area: qnt;
@@ -1028,6 +1090,7 @@ div {
 }
 .sol {
     grid-area: sol;
+
 }
 .xrp {
     grid-area: xrp;
