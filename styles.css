@@ -9,7 +9,7 @@ body {
     font-family: "Roboto", Arial,Helvetica,sans-serif;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow-x: auto;
     overflow-y: auto;
     background-color: #1d1f1e;
     direction: ltr;
@@ -897,7 +897,7 @@ div {
     margin-top: 10px;
     display: grid;
     grid-template-columns: 44% 2% 18% 18% 18%;
-    grid-template-rows: 650px;
+    grid-template-rows: 680px;
     text-align: center;
     background-color: #000;
     color: #fff;
@@ -934,113 +934,270 @@ div {
 .container-4 {
     width: 100%;
     display: grid;
-    gap: 0.99px;
+    gap: 1px;
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas:
-                        'sol sol sol sol xrp xrp xrp xrp xrp xrp xrp xrp'
-                        'sol sol sol sol xrp xrp xrp xrp xrp xrp xrp xrp'
-                        'sol sol sol sol xrp xrp xrp xrp xrp xrp xrp xrp'
-                        'sol sol sol sol xrp xrp xrp xrp xrp xrp xrp xrp'
-                        'sol sol sol sol xrp xrp xrp xrp xrp xrp xrp xrp'
-                        'sol sol sol sol xrp xrp xrp xrp xrp xrp xrp xrp'
-                        'sol sol sol sol xrp xrp xrp xrp xrp xrp xrp xrp'
-                        'sol sol sol sol xrp xrp xrp xrp xrp xrp xrp xrp'
-                        'sol sol sol sol xrp xrp xrp xrp xrp xrp xrp xrp'
-                        'sol sol sol sol xrp xrp xrp xrp xrp xrp xrp xrp'
-                        'sol sol sol sol xrp xrp xrp xrp xrp xrp xrp xrp'
-                        'sol sol sol sol xrp xrp xrp xrp xrp xrp xrp xrp'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol xrp xrp xrp xrp xrp xrp xrp xrp'
+                        'sol sol sol sol sol xrp xrp xrp xrp xrp xrp xrp xrp'
+                        'sol sol sol sol sol xrp xrp xrp xrp xrp xrp xrp xrp'
+                        'sol sol sol sol sol xrp xrp xrp xrp xrp xrp xrp xrp'
+                        'sol sol sol sol sol xrp xrp xrp xrp xrp xrp xrp xrp'
+                        'sol sol sol sol sol xrp xrp xrp xrp xrp xrp xrp xrp'
+                        'sol sol sol sol sol xrp xrp xrp xrp xrp xrp xrp xrp'
+                        'sol sol sol sol sol xrp xrp xrp xrp xrp xrp xrp xrp'
+                        'sol sol sol sol sol xrp xrp xrp xrp xrp xrp xrp xrp'
+                        'sol sol sol sol sol xrp xrp xrp xrp xrp xrp xrp xrp'
+                        'sol sol sol sol sol xrp xrp xrp xrp xrp xrp xrp xrp'
+                        'sol sol sol sol sol xrp xrp xrp xrp xrp xrp xrp xrp'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'sol sol sol sol sol avax avax avax avax ada ada ada ada'
+                        'dot dot dot dot trx trx trx apt apt apt ltc ltc ltc'
+                        'dot dot dot dot trx trx trx apt apt apt ltc ltc ltc'
+                        'dot dot dot dot trx trx trx apt apt apt ltc ltc ltc'
+                        'dot dot dot dot trx trx trx apt apt apt ltc ltc ltc'
+                        'dot dot dot dot trx trx trx apt apt apt ltc ltc ltc'
+                        'dot dot dot dot trx trx trx apt apt apt ltc ltc ltc'
+                        'dot dot dot dot trx trx trx apt apt apt ltc ltc ltc'
+                        'dot dot dot dot trx trx trx apt apt apt ltc ltc ltc'
+                        'dot dot dot dot trx trx trx apt apt apt ltc ltc ltc'
+                        'dot dot dot dot trx trx trx apt apt apt ltc ltc ltc'
+                        'dot dot dot dot trx trx trx apt apt apt ltc ltc ltc'
+                        'dot dot dot dot trx trx trx apt apt apt ltc ltc ltc'
+                        'dot dot dot dot trx trx trx atom atom etc etc arb arb'
+                        'dot dot dot dot trx trx trx atom atom etc etc arb arb'
+                        'dot dot dot dot trx trx trx atom atom etc etc arb arb'
+                        'dot dot dot dot trx trx trx atom atom etc etc arb arb'
+                        'dot dot dot dot trx trx trx atom atom etc etc arb arb'
+                        'dot dot dot dot trx trx trx atom atom etc etc arb arb'
+                        'dot dot dot dot trx trx trx atom atom etc etc arb arb'
+                        'dot dot dot dot trx trx trx atom atom etc etc arb arb'
+                        'dot dot dot dot trx trx trx atom atom etc etc arb arb'
+                        'dot dot dot dot trx trx trx atom atom etc etc arb arb'
+                        'matic matic matic matic matic imx imx imx imx kas kas kas kas'
+                        'matic matic matic matic matic imx imx imx imx kas kas kas kas'
+                        'matic matic matic matic matic imx imx imx imx kas kas kas kas'
+                        'matic matic matic matic matic imx imx imx imx kas kas kas kas'
+                        'matic matic matic matic matic imx imx imx imx kas kas kas kas'
+                        'matic matic matic matic matic imx imx imx imx kas kas kas kas'
+                        'matic matic matic matic matic imx imx imx imx kas kas kas kas'
+                        'matic matic matic matic matic imx imx imx imx kas kas kas kas'
 
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'sol sol sol sol avax avax avax avax ada ada ada ada'
-                        'dot dot dot trx trx trx apt apt apt ltc ltc ltc'
-                        'dot dot dot trx trx trx apt apt apt ltc ltc ltc'
-                        'dot dot dot trx trx trx apt apt apt ltc ltc ltc'
-                        'dot dot dot trx trx trx apt apt apt ltc ltc ltc'
-                        'dot dot dot trx trx trx apt apt apt ltc ltc ltc'
-                        'dot dot dot trx trx trx apt apt apt ltc ltc ltc'
-                        'dot dot dot trx trx trx apt apt apt ltc ltc ltc'
-                        'dot dot dot trx trx trx apt apt apt ltc ltc ltc'
-                        'dot dot dot trx trx trx apt apt apt ltc ltc ltc'
-                        'dot dot dot trx trx trx apt apt apt ltc ltc ltc'
-                        'dot dot dot trx trx trx apt apt apt ltc ltc ltc'
-                        'dot dot dot trx trx trx apt apt apt ltc ltc ltc'
-                        'dot dot dot trx trx trx atom atom etc etc arb arb'
-                        'dot dot dot trx trx trx atom atom etc etc arb arb'
-                        'dot dot dot trx trx trx atom atom etc etc arb arb'
-                        'dot dot dot trx trx trx atom atom etc etc arb arb'
-                        'dot dot dot trx trx trx atom atom etc etc arb arb'
-                        'dot dot dot trx trx trx atom atom etc etc arb arb'
-                        'dot dot dot trx trx trx atom atom etc etc arb arb'
-                        'dot dot dot trx trx trx atom atom etc etc arb arb'
-                        'dot dot dot trx trx trx atom atom etc etc arb arb'
-                        'dot dot dot trx trx trx atom atom etc etc arb arb'
-                        'matic matic matic matic matic matic imx imx imx kas kas kas'
-                        'matic matic matic matic matic matic imx imx imx kas kas kas'
-                        'matic matic matic matic matic matic imx imx imx kas kas kas'
-                        'matic matic matic matic matic matic imx imx imx kas kas kas'
-                        'matic matic matic matic matic matic imx imx imx kas kas kas'
-                        'matic matic matic matic matic matic imx imx imx kas kas kas'
-                        'matic matic matic matic matic matic imx imx imx kas kas kas'
-                        'matic matic matic matic matic matic imx imx imx kas kas kas'
-
-                        'icp icp icp near near near xlm xlm xlm ftm tia tia'
-                        'icp icp icp near near near xlm xlm xlm ftm tia tia'
-                        'icp icp icp near near near xlm xlm xlm ftm tia tia'
-                        'icp icp icp near near near xlm xlm xlm ftm tia tia'
-                        'icp icp icp near near near xlm xlm xlm ftm tia tia'
-                        'icp icp icp near near near xlm xlm xlm ftm tia tia'
-                        'icp icp icp near near near op op vet vet algo cfx'
-                        'icp icp icp near near near op op vet vet algo cfx'
-                        'icp icp icp near near near op op vet vet algo cfx'
-                        'icp icp icp near near near op op vet vet algo cfx'
-                        'icp icp icp near near near op op vet vet flow qnt'
-                        'icp icp icp near near near op op vet vet flow qnt'
-                        'icp icp icp near near near op op vet vet flow qnt'
-                        'icp icp icp near near near op op vet vet flow y';
-
+                        'icp icp icp near near near xlm xlm xlm ftm ftm tia tia'
+                        'icp icp icp near near near xlm xlm xlm ftm ftm tia tia'
+                        'icp icp icp near near near xlm xlm xlm ftm ftm tia tia'
+                        'icp icp icp near near near xlm xlm xlm ftm ftm tia tia'
+                        'icp icp icp near near near xlm xlm xlm ftm ftm tia tia'
+                        'icp icp icp near near near xlm xlm xlm ftm ftm tia tia'
+                        'icp icp icp near near near op op vet vet algo algo cfx'
+                        'icp icp icp near near near op op vet vet algo algo cfx'
+                        'icp icp icp near near near op op vet vet algo algo cfx'
+                        'icp icp icp near near near op op vet vet algo algo cfx'
+                        'icp icp icp near near near op op vet vet flow flow qnt'
+                        'icp icp icp near near near op op vet vet flow flow qnt'
+                        'icp icp icp near near near op op vet vet flow flow qnt'
+                        'icp icp icp near near near op op vet vet flow flow y';
 }
+
+
+/* Container-5 */
+
 .container-5 {
     display: grid;
-    grid-template-columns: 96.9%;
-    grid-template-rows: 50%;
-    padding-left: 8px;
+    width: 92%;
+    height: 30%;
+    margin-left: 8px;
+    gap: 1px;
+    grid-template-areas: 
+                        'ton ton ton ton ton ton leo leo fil fil'
+                        'ton ton ton ton ton ton leo leo fil fil'
+                        'ton ton ton ton ton ton leo leo fil fil'
+                        'ton ton ton ton ton ton leo leo fil fil'
+                        'ton ton ton ton ton ton leo leo fil fil'
+                        'ton ton ton ton ton ton leo leo fil fil'
+
+                        'ton ton ton ton ton ton mnt mnt cro cro'
+                        'ton ton ton ton ton ton mnt mnt cro cro'
+
+                        'ton ton ton ton ton ton core sei sei beam'
+                        'tao tao tao wif wif wif core sei sei beam'
+                        'tao tao tao wif wif wif ar flr flr beamx'
+                        'hbar hbar okb okb wbeth jup ar yy pp xmr'
+                        'hbar hbar okb okb wbeth usde bonk dat ena ll'
+                        'hbar hbar okb okb wbeth usde bonk bgb xx zz'
+                        'container-6 container-6 container-6 container-6 container-6 container-6 container-6 container-6 container-6 container-6'
+                        'container-7 container-7 container-7 container-7 container-7 container-7 container-7 container-7 container-7 container-7'
+                        ;
 }
+.container-6 {
+    height: 150px;
+    grid-template-rows: 100%;
+    grid-area: container-6;
+    display: grid;
+    gap: 1px;
+    grid-template-areas: 'doge doge doge doge shib shib shib shib'
+                        'doge doge doge doge shib shib shib shib'
+                        'doge doge doge doge shib shib shib shib'
+                        'doge doge doge doge shib shib shib shib'
+                        'doge doge doge doge shib shib shib shib'
+                        'doge doge doge doge shib shib shib shib'
+                        'doge doge doge doge shib shib shib shib'
+                        'doge doge doge doge shib shib shib shib'
+
+                        'doge doge doge doge pepe pepe pepe floki'
+                        'doge doge doge doge pepe pepe pepe floki'
+                        'doge doge doge doge pepe pepe pepe floki'
+                        'container-7 container-7 container-7 container-7 container-7 container-7 container-7 container-7'
+                        ;
+    margin-top: 15px;
+}
+.container-7 {
+    grid-area: container-7;
+    display: grid;
+    margin-top: 40px;
+    grid-template-areas: 'ds ds ds ds ds';
+}
+
+/* Container-5 Currencies */
+.ds {
+    grid-area: ds;
+}
+.pepe {
+    grid-area: pepe;
+}
+.floki {
+    grid-area: floki;
+}
+.shib {
+    grid-area: shib;
+}
+.doge {
+    grid-area: doge;
+}
+.pp {
+    grid-area: pp;
+}
+.ll {
+    grid-area: ll;
+}
+.zz {
+    grid-area: zz;
+}
+.xx {
+    grid-area: xx;
+}
+.yy {
+    grid-area: yy;
+}
+.tao {
+    grid-area: tao;
+}
+.wif {
+    grid-area: wif;
+}
+.flr {
+    grid-area: flr;
+}
+.ena {
+    grid-area: ena;
+}
+.dat {
+    grid-area: dat;
+}
+.bonk {
+    grid-area: bonk;
+}
+.sei {
+    grid-area: sei;
+}
+.usde {
+    grid-area: usde;
+}
+.jup {
+    grid-area: jup;
+}
+.wbeth {
+    grid-area: wbeth;
+}
+.okb {
+    grid-area: okb;
+}
+.hbar {
+    grid-area: hbar;
+}
+.beamx {
+    grid-area: beamx;
+}
+.ar {
+    grid-area: ar;
+}
+.xmr {
+    grid-area: xmr;
+}
+.beam {
+    grid-area: beam;
+}
+.bgb {
+    grid-area: bgb;
+}
+.core {
+    grid-area: core;
+}
+.ton {
+    grid-area: ton;
+}
+.mnt {
+    grid-area: mnt;
+}
+.cro {
+    grid-area: cro;
+}
+.fil {
+    grid-area: fil;
+}
+.leo {
+    grid-area: leo;
+}
+
+
+
+
+/* Container-4 Currencies */
 .z {
     grid-area: z;
 }
