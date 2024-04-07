@@ -897,42 +897,42 @@ div {
     margin-top: 10px;
     display: grid;
     grid-template-columns: 44% 2% 18% 18% 18%;
-    grid-template-rows: 680px;
+    grid-template-rows: 650px;
     text-align: center;
     background-color: #000;
     color: #fff;
     gap: 1px;
-    z-index: 100;
+    z-index: 10000;
 }
 
-/* Container */
+/* Container-1 Content */
 .container-1 {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 100%;
 }
-.btc {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
 
+/* Container-2 Content */
 .container-2 {
     display: grid;
+    height: auto;
     grid-template-columns: 100%;
     grid-template-rows: 50% 39% 7% 4%;
 }
 
+/* Container-3 Content */
 .container-3 {
+    height: auto;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 75% 25%;
     margin-left: 4px;
 }
 
-/* Container-4 (SOL, AVAX, XRP, ...) */
+/* Container-4 Content */
 .container-4 {
     width: 100%;
+    height: auto;
     display: grid;
     gap: 1px;
     grid-template-columns: auto;
@@ -1017,7 +1017,6 @@ div {
                         'matic matic matic matic matic imx imx imx imx kas kas kas kas'
                         'matic matic matic matic matic imx imx imx imx kas kas kas kas'
                         'matic matic matic matic matic imx imx imx imx kas kas kas kas'
-
                         'icp icp icp near near near xlm xlm xlm ftm ftm tia tia'
                         'icp icp icp near near near xlm xlm xlm ftm ftm tia tia'
                         'icp icp icp near near near xlm xlm xlm ftm ftm tia tia'
@@ -1034,14 +1033,26 @@ div {
                         'icp icp icp near near near op op vet vet flow flow y';
 }
 
+/* last-containers Content (5 to 7) */
+.last-containers {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 90% 90% 90%;
+    grid-template-rows: 35% 30% 35%;
+    grid-template-areas: 'container-5'
+                        'container-6'
+                        'container-7';
+    margin-left: 8px;
+    z-index: 1000;
+}
 
-/* Container-5 */
-
+/* Container-5 Content */
 .container-5 {
     display: grid;
-    width: 92%;
-    height: 30%;
-    margin-left: 8px;
+    grid-area: container-5;
+    width: auto;
+    height: auto;
     gap: 1px;
     grid-template-areas: 
                         'ton ton ton ton ton ton leo leo fil fil'
@@ -1050,50 +1061,116 @@ div {
                         'ton ton ton ton ton ton leo leo fil fil'
                         'ton ton ton ton ton ton leo leo fil fil'
                         'ton ton ton ton ton ton leo leo fil fil'
-
                         'ton ton ton ton ton ton mnt mnt cro cro'
                         'ton ton ton ton ton ton mnt mnt cro cro'
-
                         'ton ton ton ton ton ton core sei sei beam'
                         'tao tao tao wif wif wif core sei sei beam'
                         'tao tao tao wif wif wif ar flr flr beamx'
                         'hbar hbar okb okb wbeth jup ar yy pp xmr'
                         'hbar hbar okb okb wbeth usde bonk dat ena ll'
-                        'hbar hbar okb okb wbeth usde bonk bgb xx zz'
-                        'container-6 container-6 container-6 container-6 container-6 container-6 container-6 container-6 container-6 container-6'
-                        'container-7 container-7 container-7 container-7 container-7 container-7 container-7 container-7 container-7 container-7'
-                        ;
+                        'hbar hbar okb okb wbeth usde bonk bgb xx zz';
 }
+
+/* Container-6 Content */
 .container-6 {
-    height: 150px;
-    grid-template-rows: 100%;
+    width: auto;
+    height: auto;
+    display: grid;
     grid-area: container-6;
-    display: grid;
     gap: 1px;
-    grid-template-areas: 'doge doge doge doge shib shib shib shib'
-                        'doge doge doge doge shib shib shib shib'
-                        'doge doge doge doge shib shib shib shib'
-                        'doge doge doge doge shib shib shib shib'
-                        'doge doge doge doge shib shib shib shib'
-                        'doge doge doge doge shib shib shib shib'
-                        'doge doge doge doge shib shib shib shib'
-                        'doge doge doge doge shib shib shib shib'
-
-                        'doge doge doge doge pepe pepe pepe floki'
-                        'doge doge doge doge pepe pepe pepe floki'
-                        'doge doge doge doge pepe pepe pepe floki'
-                        'container-7 container-7 container-7 container-7 container-7 container-7 container-7 container-7'
-                        ;
-    margin-top: 15px;
+    margin-top: 45px;
+    grid-template-areas: 'doge doge doge doge doge shib shib shib shib shib'
+                         'doge doge doge doge doge shib shib shib shib shib'
+                         'doge doge doge doge doge shib shib shib shib shib'
+                         'doge doge doge doge doge shib shib shib shib shib'
+                         'doge doge doge doge doge shib shib shib shib shib'
+                         'doge doge doge doge doge shib shib shib shib shib'
+                         'doge doge doge doge doge shib shib shib shib shib'
+                         'doge doge doge doge doge pepe pepe pepe floki floki'
+                         'doge doge doge doge doge pepe pepe pepe floki floki'
+                         'doge doge doge doge doge pepe pepe pepe floki floki'
 }
+
+/* Container-7 Content */
 .container-7 {
-    grid-area: container-7;
+    width: auto;
+    height: auto;
     display: grid;
-    margin-top: 40px;
-    grid-template-areas: 'ds ds ds ds ds';
+    grid-area: container-7;
+    gap: 0px;
+    margin-top: 20px;
+    grid-template-areas: 'link link link link uni uni uni rndr rndr rndr'
+                        'link link link link uni uni uni rndr rndr rndr'
+                        'link link link link uni uni uni rndr rndr rndr'
+                        'link link link link uni uni uni rndr rndr rndr'
+                        'link link link link uni uni uni rndr rndr rndr'
+                        'link link link link uni uni uni theta theta theta'
+                        'link link link link uni uni uni theta theta theta'
+                        'link link link link uni uni uni fet fet fet'
+                        'link link link link uni uni uni fet fet fet'
+                        'stx stx grt grt grt inj gala q sand sand'
+                        'stx stx grt grt grt inj gala q sand sand'
+                        'stx stx grt grt grt inj gala q sand sand'
+                        'stx stx grt grt grt inj gala q ys yz'
+                        'stx stx grt grt grt inj gala q ys yz'
+                        'stx stx grt grt grt inj gala q ys yz'
+                        'stx stx grt grt grt inj gala q x y'
+                        'stx stx grt grt grt inj gala q x y'
+                        'stx stx grt grt grt inj gala q x y'
+                        'stx stx grt grt grt inj gala q x y'
+                        'stx stx grt grt grt inj gala q x y'
+                        'lgbt lgbt lgbt lgbt lgbt lgbt lgbt lgbt lgbt lgbt';
 }
 
-/* Container-5 Currencies */
+/* Start Grid Areas Content */
+.y {
+    grid-area: y;
+}
+.q {
+    grid-area: q;
+}
+.lgbt {
+    grid-area: lgbt;
+}
+.yz {
+    grid-area: yz;
+}
+.ys {
+    grid-area: ys;
+}
+.x {
+    grid-area: x;
+}
+.gala {
+    grid-area: gala;
+}
+.sand {
+    grid-area: sand;
+}
+.inj {
+    grid-area: inj;
+}
+.grt {
+    grid-area: grt;
+}
+.stx {
+    grid-area: stx;
+}
+.fet {
+    grid-area: fet;
+}
+.theta {
+    grid-area: theta;
+}
+.rndr {
+    grid-area: rndr;
+}
+.uni {
+    grid-area: uni;
+}
+.link {
+    grid-area: link;
+}
 .ds {
     grid-area: ds;
 }
@@ -1193,23 +1270,14 @@ div {
 .leo {
     grid-area: leo;
 }
-
-
-
-
-/* Container-4 Currencies */
 .z {
     grid-area: z;
-}
-.y > a {
-    border: 1px solid #000;
 }
 .y {
     grid-area: y;
 }
 .cfx {
     grid-area: cfx;
-    
 }
 .qnt {
     grid-area: qnt;
@@ -1273,7 +1341,6 @@ div {
 }
 .sol {
     grid-area: sol;
-
 }
 .xrp {
     grid-area: xrp;
@@ -1287,5 +1354,6 @@ div {
 .matic {
     grid-area: matic;
 }
+/* End Grid Areas Content */
 
 
