@@ -888,9 +888,15 @@ div {
 .fs-112 {
     font-size: 112px;
 }
-.border-hover:hover {
-    border: 0.2rem solid #FFA500;
+.border-hover {
+    border: 0.2rem solid transparent; 
 }
+
+.border-hover:hover {
+    border-color: #FFA500;
+    transition: border-color 0.3s;
+}
+
 
 /* Currencies SECTION */
 .currencies {
@@ -1120,9 +1126,14 @@ div {
                         'stx stx grt grt grt inj gala q x y'
                         'stx stx grt grt grt inj gala q x y'
                         'stx stx grt grt grt inj gala q x y'
-                        'stx stx grt grt grt inj gala q x y'
-                        'stx stx grt grt grt inj gala q x y'
-                        'lgbt lgbt lgbt lgbt lgbt lgbt lgbt lgbt lgbt lgbt';
+                        
+                        'lgbt lgbt lgbt lgbt lgbt lgbt lgbt lgbt lgbt lgbt'
+                        'lgbt lgbt lgbt lgbt lgbt lgbt lgbt lgbt lgbt lgbt'
+                        'lgbt lgbt lgbt lgbt lgbt lgbt lgbt lgbt lgbt lgbt'
+                        'lgbt lgbt lgbt lgbt lgbt lgbt lgbt lgbt lgbt lgbt'
+
+                        ;
+
 }
 
 /* Start Grid Areas Content */
