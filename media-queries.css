@@ -1,0 +1,21 @@
+
+/* Desktop Screen */
+@media (min-width: 1460px) and (max-width: 8000px) {
+  .currencies {
+    display: grid;
+    grid-template-rows: 680px;
+  }
+  .fs-1 {
+    font-size: 2px !important;
+  }
+  .fs-2 {
+    font-size: 3px !important;
+  }
+  .fs-3 {
+    font-size: 7px !important;
+  }
+  .fs-beamx {
+    font-size: 3px;
+  }
+  
+}

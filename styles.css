@@ -857,6 +857,20 @@ div {
     bottom: 0px;
 }
 
+/* font-size */
+.fs-2 {
+    font-size: 2px;
+}
+.fs-1 {
+    font-size: 1px;
+}
+.fs-3 {
+    font-size: 3px;
+}
+.fs-beamx {
+    font-size: 4px;
+}
+/* flex */
 .flex {
     display: flex;
 }
@@ -875,6 +889,9 @@ div {
 .text-center {
     text-align: center;
     margin-top: 40%;
+}
+.bg-dark-red {
+    background-color: #C84040;
 }
 .bg-green {
     background-color: #7ec17f;
@@ -903,7 +920,7 @@ div {
     margin-top: 10px;
     display: grid;
     grid-template-columns: 44% 2% 18% 18% 18%;
-    grid-template-rows: auto;
+    grid-template-rows: 680px;
     text-align: center;
     background-color: #000;
     color: #fff;
@@ -940,7 +957,7 @@ div {
     width: 100%;
     height: auto;
     display: grid;
-    gap: 0.8px;
+    gap: 1px;
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas:
@@ -952,7 +969,6 @@ div {
                         'sol sol sol sol sol avax avax avax avax ada ada ada ada'
                         'sol sol sol sol sol avax avax avax avax ada ada ada ada'
                         'sol sol sol sol sol avax avax avax avax ada ada ada ada'
-
                         'sol sol sol sol sol avax avax avax avax ada ada ada ada'
                         'sol sol sol sol sol avax avax avax avax ada ada ada ada'
                         'sol sol sol sol sol avax avax avax avax ada ada ada ada'
@@ -1015,22 +1031,22 @@ div {
                         'dot dot dot dot trx trx trx atom atom etc etc arb arb'
                         'dot dot dot dot trx trx trx atom atom etc etc arb arb'
                         'dot dot dot dot trx trx trx atom atom etc etc arb arb'
-                        'dot dot dot dot trx trx trx atom atom etc etc arb arb'
-                        'dot dot dot dot trx trx trx atom atom etc etc arb arb'
+                        'dot dot dot dot trx trx trx atom atom etc etc cfx cfx'
+                        'dot dot dot dot trx trx trx atom atom kas kas cfx cfx'
                         'matic matic matic matic matic imx imx imx imx kas kas cfx cfx'
                         'matic matic matic matic matic imx imx imx imx kas kas cfx cfx'
                         'matic matic matic matic matic imx imx imx imx kas kas cfx cfx'
                         'matic matic matic matic matic imx imx imx imx kas kas cfx cfx'
-                        'matic matic matic matic matic imx imx imx imx kas kas cfx cfx'
-                        'matic matic matic matic matic imx imx imx imx kas kas cfx cfx'
-                        'matic matic matic matic matic imx imx imx imx kas kas cfx cfx'
-                        'matic matic matic matic matic imx imx imx imx kas kas cfx cfx'
-                        'icp icp icp near near near xlm xlm xlm ftm ftm tia tia'
-                        'icp icp icp near near near xlm xlm xlm ftm ftm tia tia'
-                        'icp icp icp near near near xlm xlm xlm ftm ftm tia tia'
-                        'icp icp icp near near near xlm xlm xlm ftm ftm tia tia'
-                        'icp icp icp near near near xlm xlm xlm ftm ftm tia tia'
-                        'icp icp icp near near near xlm xlm xlm ftm ftm tia tia'
+                        'matic matic matic matic matic imx imx imx imx kas kas btt btt'
+                        'matic matic matic matic matic imx imx imx imx kas kas btt btt'
+                        'matic matic matic matic matic imx imx imx imx kas kas btt btt'
+                        'matic matic matic matic matic imx imx imx imx kas kas btt btt'
+                        'icp icp icp near near near xlm xlm xlm xlm ftm tia tia'
+                        'icp icp icp near near near xlm xlm xlm xlm ftm tia tia'
+                        'icp icp icp near near near xlm xlm xlm xlm ftm tia tia'
+                        'icp icp icp near near near xlm xlm xlm xlm ftm tia tia'
+                        'icp icp icp near near near xlm xlm xlm xlm ftm tia tia'
+                        'icp icp icp near near near xlm xlm xlm xlm ftm tia tia'
                         'icp icp icp near near near op op vet vet algo neo zzz'
                         'icp icp icp near near near op op vet vet algo neo zzz'
                         'icp icp icp near near near op op vet vet algo neo zzz'
@@ -1038,7 +1054,7 @@ div {
                         'icp icp icp near near near op op vet vet flow w ys'
                         'icp icp icp near near near op op vet vet flow w ys'
                         'icp icp icp near near near op op vet vet flow w ys'
-                        'icp icp icp near near near op op vet vet flow w ys'
+                        'icp icp icp near near near op op vet vet flow w yy'
                         ;
 }
 .w {
@@ -1047,16 +1063,18 @@ div {
 .neo {
     grid-area: neo;
 }
-
+.btt {
+    grid-area: btt;
+}
 /* last-containers Content (5 to 7) */
 .last-containers {
     display: grid;
     width: 100%;
     height: auto;
     grid-template-columns: 90% 90% 90%;
-    grid-template-rows: 35% 30% 35%;
+    grid-template-rows: 40% 20% 40%;
     grid-template-areas: 'container-5'
-                        'container-6'
+                         'container-6'
                         'container-7';
     margin-left: 8px;
     z-index: 1000;
@@ -1075,16 +1093,16 @@ div {
                         'ton ton ton ton ton ton leo leo fil fil'
                         'ton ton ton ton ton ton leo leo fil fil'
                         'ton ton ton ton ton ton leo leo fil fil'
-                        'ton ton ton ton ton ton leo leo fil fil'
-                        'ton ton ton ton ton ton leo leo fil fil'
+                        'ton ton ton ton ton ton leo leo cro cro'
+                        'ton ton ton ton ton ton mnt mnt cro cro'
                         'ton ton ton ton ton ton mnt mnt cro cro'
                         'ton ton ton ton ton ton mnt mnt cro cro'
                         'ton ton ton ton ton ton core sei sei beam'
                         'tao tao tao wif wif wif core sei sei beam'
                         'tao tao tao wif wif wif ar flr flr beamx'
-                        'hbar hbar okb okb wbeth jup ar yy pp xmr'
-                        'hbar hbar okb okb wbeth usde bonk dat ena ll'
-                        'hbar hbar okb okb wbeth usde bonk bgb xx zz';
+                        'tao tao tao jup jup jup ar yy pp xmr'
+                        'hbar hbar wbeth okb okb usde bonk dat ena ll'
+                        'hbar hbar wbeth okb okb usde bonk bgb xx zz';
 }
 
 /* Container-6 Content */
@@ -1093,9 +1111,9 @@ div {
     width: auto;
     height: auto;
     border: 1px solid #000;
+    margin-top: 12px;
     grid-area: container-6;
     gap: 1px;
-    margin-top: 10px;
     grid-template-areas: 'doge doge doge doge doge shib shib shib shib shib'
                          'doge doge doge doge doge shib shib shib shib shib'
                          'doge doge doge doge doge shib shib shib shib shib'
@@ -1123,8 +1141,8 @@ div {
                         'link link link link uni uni uni rndr rndr rndr'
                         'link link link link uni uni uni theta theta theta'
                         'link link link link uni uni uni theta theta theta'
-                        'link link link link uni uni uni fet fet fet'
-                        'link link link link uni uni uni fet fet fet'
+                        'link link link link uni uni uni theta theta theta'
+                        'link link link link uni uni uni theta theta theta'
                         'stx stx grt grt grt inj gala q sand sand'
                         'stx stx grt grt grt inj gala q sand sand'
                         'stx stx grt grt grt inj gala q sand sand'
