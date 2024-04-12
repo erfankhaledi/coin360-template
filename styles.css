@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
     background-color: #1d1f1e;
     direction: ltr;
 }
@@ -913,14 +913,15 @@ div {
     border-color: #FFA500;
     transition: border-color 0s;
 }
-
+main {
+    height: 50px;
+}
 
 /* Currencies SECTION */
 .currencies {
-    margin-top: 10px;
     display: grid;
     grid-template-columns: 44% 2% 18% 18% 18%;
-    grid-template-rows: 680px;
+    height: 680px;
     text-align: center;
     background-color: #000;
     color: #fff;
@@ -1030,23 +1031,23 @@ div {
                         'dot dot dot dot trx trx trx atom atom etc etc arb arb'
                         'dot dot dot dot trx trx trx atom atom etc etc arb arb'
                         'dot dot dot dot trx trx trx atom atom etc etc arb arb'
-                        'dot dot dot dot trx trx trx atom atom etc etc arb arb'
+                        'dot dot dot dot trx trx trx atom atom etc etc cfx cfx'
                         'dot dot dot dot trx trx trx atom atom etc etc cfx cfx'
                         'dot dot dot dot trx trx trx atom atom kas kas cfx cfx'
                         'matic matic matic matic matic imx imx imx imx kas kas cfx cfx'
                         'matic matic matic matic matic imx imx imx imx kas kas cfx cfx'
                         'matic matic matic matic matic imx imx imx imx kas kas cfx cfx'
-                        'matic matic matic matic matic imx imx imx imx kas kas cfx cfx'
                         'matic matic matic matic matic imx imx imx imx kas kas btt btt'
                         'matic matic matic matic matic imx imx imx imx kas kas btt btt'
                         'matic matic matic matic matic imx imx imx imx kas kas btt btt'
                         'matic matic matic matic matic imx imx imx imx kas kas btt btt'
+                        'matic matic matic matic matic imx imx imx imx kas kas tia tia'
                         'icp icp icp near near near xlm xlm xlm xlm ftm tia tia'
                         'icp icp icp near near near xlm xlm xlm xlm ftm tia tia'
                         'icp icp icp near near near xlm xlm xlm xlm ftm tia tia'
                         'icp icp icp near near near xlm xlm xlm xlm ftm tia tia'
                         'icp icp icp near near near xlm xlm xlm xlm ftm tia tia'
-                        'icp icp icp near near near xlm xlm xlm xlm ftm tia tia'
+                        'icp icp icp near near near xlm xlm xlm xlm algo neo zzz'
                         'icp icp icp near near near op op vet vet algo neo zzz'
                         'icp icp icp near near near op op vet vet algo neo zzz'
                         'icp icp icp near near near op op vet vet algo neo zzz'
