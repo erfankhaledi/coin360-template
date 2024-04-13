@@ -25,7 +25,7 @@
 /* RESPONSIVE HEIGHT (615px - 920px)*/
 @media (min-height: 615px) and (max-height: 623px) {
   .currencies {
-    grid-template-rows: 390px;
+    grid-template-rows: 385px;
   }
   .container-5 {
     display: grid;
@@ -43,7 +43,7 @@
 }
 @media (min-height: 624px) and (max-height: 629px) {
   .currencies {
-    grid-template-rows: 388px;
+    grid-template-rows: 392px;
   }
   .container-5 {
     display: grid;
@@ -357,11 +357,12 @@
   }
   .container-6 {
     display: grid !important;
+    height: 85px !important;
     margin-top: 20px !important;
   }
   .container-7 {
     display: grid;
-    margin-top: 4px !important;
+    margin-top: 14px !important;
   }
 }
 @media (min-height: 729px) and (max-height: 736px) {
@@ -425,7 +426,7 @@
   }
   .container-6 {
     display: grid !important;
-    margin-top: 10px !important;
+    margin-top: 8.5px !important;
   }
   .container-7 {
     display: grid;
@@ -442,7 +443,7 @@
   }
   .container-6 {
     display: grid !important;
-    margin-top: 10px !important;
+    margin-top: 7px !important;
   }
   .container-7 {
     display: grid;
@@ -472,7 +473,7 @@
   }
   .container-5 {
     display: grid;
-    height: 10px !important;
+    height: 7.5px !important;
   }
   .container-6 {
     display: grid !important;

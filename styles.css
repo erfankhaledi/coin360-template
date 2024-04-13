@@ -1135,35 +1135,52 @@ main {
     grid-area: container-7;
     gap: 1px;
     margin-top: 10px;
-    grid-template-areas: 'link link link link uni uni uni rndr rndr rndr'
-                        'link link link link uni uni uni rndr rndr rndr'
-                        'link link link link uni uni uni rndr rndr rndr'
-                        'link link link link uni uni uni rndr rndr rndr'
-                        'link link link link uni uni uni rndr rndr rndr'
-                        'link link link link uni uni uni theta theta theta'
-                        'link link link link uni uni uni theta theta theta'
-                        'link link link link uni uni uni theta theta theta'
-                        'link link link link uni uni uni theta theta theta'
-                        'stx stx grt grt grt inj gala q sand sand'
-                        'stx stx grt grt grt inj gala q sand sand'
-                        'stx stx grt grt grt inj gala q sand sand'
-                        'stx stx grt grt grt inj gala q ys yz'
-                        'stx stx grt grt grt inj gala q ys yz'
-                        'stx stx grt grt grt inj gala q ys yz'
-                        'stx stx grt grt grt inj gala q x y'
-                        'stx stx grt grt grt inj gala q x y'
-                        'stx stx grt grt grt inj gala q x y'
-                        
-                        'lgbt lgbt lgbt lgbt lgbt lgbt lgbt lgbt lgbt lgbt'
-                        'lgbt lgbt lgbt lgbt lgbt lgbt lgbt lgbt lgbt lgbt'
-                        'lgbt lgbt lgbt lgbt lgbt lgbt lgbt lgbt lgbt lgbt'
-                        'lgbt lgbt lgbt lgbt lgbt lgbt lgbt lgbt lgbt lgbt'
+    grid-template-areas: 'link link link link link link uni uni uni rndr rndr rndr rndr rndr'
+                         'link link link link link link uni uni uni rndr rndr rndr rndr rndr'
+                         'link link link link link link uni uni uni rndr rndr rndr rndr rndr'
+                         'link link link link link link uni uni uni theta theta fet fet fet'
+                         'link link link link link link uni uni uni theta theta fet fet fet'
+                         'link link link link link link uni uni uni theta theta sand x x'
+                         'link link link link link link uni uni uni theta theta sand y yz'
+                         'stx stx stx stx stx grt grt grt inj inj inj fdusd fdusd fdusd'
+                         'stx stx stx stx stx grt grt grt inj inj inj fdusd fdusd fdusd'
+                         'stx stx stx stx stx rune rune ldo ldo aave aave fdusd fdusd fdusd'
+                         'mkr mkr mkr mkr mkr rune rune ldo ldo aave aave fdusd fdusd fdusd'
+                         'mkr mkr mkr mkr mkr rune rune ldo ldo ys yd fdusd fdusd fdusd'
+                         'mkr mkr mkr mkr mkr rune rune ldo ldo ys yo fdusd fdusd fdusd'
+
+
+
 
                         ;
 
 }
 
 /* Start Grid Areas Content */
+.mkr {
+    grid-area: mkr;
+}
+.yo {
+    grid-area: yo;
+}
+.yd {
+    grid-area: yd;
+}
+.aave {
+    grid-area: aave;
+}
+.ldo {
+    grid-area: ldo;
+}
+.rune {
+    grid-area: rune;
+}
+.fdusd {
+    grid-area: fdusd;
+}
+.fet {
+    grid-area: fet;
+}
 .eed {
     grid-area: eed;
 }
