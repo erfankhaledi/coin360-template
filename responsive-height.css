@@ -43,7 +43,7 @@
 }
 @media (min-height: 624px) and (max-height: 629px) {
   .currencies {
-    grid-template-rows: 392px;
+    grid-template-rows: 390px;
   }
   .container-5 {
     display: grid;
@@ -79,7 +79,7 @@
 }
 @media (min-height: 639px) and (max-height: 644px) {
   .currencies {
-    grid-template-rows: 405px;
+    grid-template-rows: 400px;
   }
   .container-5 {
     display: grid;
@@ -97,7 +97,7 @@
 }
 @media (min-height: 645px) and (max-height: 650px) {
   .currencies {
-    grid-template-rows: 410px;
+    grid-template-rows: 405px;
   }
   .container-5 {
     display: grid;
@@ -115,7 +115,7 @@
 }
 @media (min-height: 651px) and (max-height: 655px) {
   .currencies {
-    grid-template-rows: 415px;
+    grid-template-rows: 410px;
   }
   .container-5 {
     display: grid;
@@ -133,7 +133,7 @@
 }
 @media (min-height: 656px) and (max-height: 660px) {
   .currencies {
-    grid-template-rows: 420px;
+    grid-template-rows: 415px;
   }
   .container-5 {
     display: grid;
@@ -151,7 +151,7 @@
 }
 @media (min-height: 661px) and (max-height: 665px) {
   .currencies {
-    grid-template-rows: 425px;
+    grid-template-rows: 420px;
   }
   .container-5 {
     display: grid;
@@ -169,7 +169,7 @@
 }
 @media (min-height: 666px) and (max-height: 670px) {
   .currencies {
-    grid-template-rows: 430px;
+    grid-template-rows: 425px;
   }
   .container-5 {
     display: grid;
@@ -187,7 +187,7 @@
 }
 @media (min-height: 671px) and (max-height: 675px) {
   .currencies {
-    grid-template-rows: 435px;
+    grid-template-rows: 430px;
   }
   .container-5 {
     display: grid;
@@ -223,7 +223,7 @@
 }
 @media (min-height: 681px) and (max-height: 685px) {
   .currencies {
-    grid-template-rows: 442px;
+    grid-template-rows: 440px;
   }
   .container-5 {
     display: grid;
@@ -295,7 +295,7 @@
 }
 @media (min-height: 703px) and (max-height: 708px) {
   .currencies {
-    grid-template-rows: 465px;
+    grid-template-rows: 460px;
   }
   .container-5 {
     display: grid;
@@ -313,7 +313,7 @@
 }
 @media (min-height: 709px) and (max-height: 715px) {
   .currencies {
-    grid-template-rows: 472px;
+    grid-template-rows: 465px;
   }
   .container-5 {
     display: grid;
@@ -329,9 +329,15 @@
     margin-top: 22px !important;
   }
 }
+
+/* Container-7 HEIGHT RESPONSIVE */
 @media (min-height: 716px) and (max-height: 721px) {
   .currencies {
-    grid-template-rows: 480px;
+    grid-template-rows: 470px;
+  }
+  .last-containers {
+    display: grid;
+    grid-template-rows: 40% 19% 3% !important;
   }
   .container-5 {
     display: grid;
@@ -340,16 +346,17 @@
   .container-6 {
     display: grid !important;
     height: 80px !important;
-    margin-top: 25px !important;
+    margin-top: 20px !important;
   }
   .container-7 {
     display: grid;
-    margin-top: 18px !important;
+    grid-template-rows: 1% !important;
+    margin-top: 13.5px !important;
   }
 }
 @media (min-height: 722px) and (max-height: 728px) {
   .currencies {
-    grid-template-rows: 488px;
+    grid-template-rows: 475px;
   }
   .container-5 {
     display: grid;
@@ -367,7 +374,7 @@
 }
 @media (min-height: 729px) and (max-height: 736px) {
   .currencies {
-    grid-template-rows: 495px;
+    grid-template-rows: 480px;
   } 
   .container-5 {
     display: grid;
@@ -384,7 +391,7 @@
 }
 @media (min-height: 737px) and (max-height: 745px) {
   .currencies {
-    grid-template-rows: 500px;
+    grid-template-rows: 485px;
   }
   .container-5 {
     display: grid;
@@ -401,7 +408,7 @@
 }
 @media (min-height: 746px) and (max-height: 751px) {
   .currencies {
-    grid-template-rows: 510px;
+    grid-template-rows: 490px;
   }
   .container-5 {
     display: grid;
@@ -418,7 +425,7 @@
 }
 @media (min-height: 752px) and (max-height: 758px) {
   .currencies {
-    grid-template-rows: 515px;
+    grid-template-rows: 450px;
   }
   .container-5 {
     display: grid;
@@ -435,7 +442,7 @@
 }
 @media (min-height: 759px) and (max-height: 766px) {
   .currencies {
-    grid-template-rows: 520px;
+    grid-template-rows: 555px;
   }
   .container-5 {
     display: grid;
@@ -452,7 +459,7 @@
 }
 @media (min-height: 767px) and (max-height: 775px) {
   .currencies {
-    grid-template-rows: 525px;
+    grid-template-rows: 560px;
   }
   .container-5 {
     display: grid;
@@ -469,7 +476,7 @@
 }
 @media (min-height: 776px) and (max-height: 782px) {
   .currencies {
-    grid-template-rows: 535px;
+    grid-template-rows: 565px;
   }
   .container-5 {
     display: grid;
@@ -486,7 +493,7 @@
 }
 @media (min-height: 783px) and (max-height: 788px) {
   .currencies {
-    grid-template-rows: 540px;
+    grid-template-rows: 570px;
   }
   .container-5 {
     display: grid;
@@ -503,7 +510,7 @@
 }
 @media (min-height: 789px) and (max-height: 795px) {
   .currencies {
-    grid-template-rows: 545px;
+    grid-template-rows: 575px;
   }
   .container-5 {
     display: grid;
@@ -520,7 +527,7 @@
 }
 @media (min-height: 796px) and (max-height: 805px) {
   .currencies {
-    grid-template-rows: 555px;
+    grid-template-rows: 580px;
   }
   .container-5 {
     display: grid;
@@ -537,7 +544,7 @@
 }
 @media (min-height: 806px) and (max-height: 812px) {
   .currencies {
-    grid-template-rows: 560px;
+    grid-template-rows: 585px;
   }
   .container-5 {
     display: grid;
@@ -554,7 +561,7 @@
 }
 @media (min-height: 813px) and (max-height: 820px) {
   .currencies {
-    grid-template-rows: 570px;
+    grid-template-rows: 590px;
   }
   .container-5 {
     display: grid;
@@ -571,7 +578,7 @@
 }
 @media (min-height: 821px) and (max-height: 827px) {
   .currencies {
-    grid-template-rows: 575px;
+    grid-template-rows: 595px;
   }
   .container-5 {
     display: grid;
@@ -588,7 +595,7 @@
 }
 @media (min-height: 828px) and (max-height: 835px) {
   .currencies {
-    grid-template-rows: 585px;
+    grid-template-rows: 600px;
   }
   .container-5 {
     display: grid;
@@ -605,7 +612,7 @@
 }
 @media (min-height: 836px) and (max-height: 843px) {
   .currencies {
-    grid-template-rows: 585px;
+    grid-template-rows: 605px;
   }
   .container-5 {
     display: grid;
@@ -623,7 +630,7 @@
 }
 @media (min-height: 844px) and (max-height: 850px) {
   .currencies {
-    grid-template-rows: 595px;
+    grid-template-rows: 610px;
   }
   .container-5 {
     display: grid;
@@ -641,7 +648,7 @@
 }
 @media (min-height: 851px) and (max-height: 857px) {
   .currencies {
-    grid-template-rows: 605px;
+    grid-template-rows: 615px;
   }
   .container-5 {
     display: grid;
@@ -659,7 +666,7 @@
 }
 @media (min-height: 858px) and (max-height: 865px) {
   .currencies {
-    grid-template-rows: 615px;
+    grid-template-rows: 620px;
   }
   .container-5 {
     display: grid;
@@ -677,7 +684,7 @@
 }
 @media (min-height: 866px) and (max-height: 874px) {
   .currencies {
-    grid-template-rows: 620px;
+    grid-template-rows: 625px;
   }
   .container-5 {
     display: grid;
@@ -713,7 +720,7 @@
 }
 @media (min-height: 883px) and (max-height: 890px) {
   .currencies {
-    grid-template-rows: 640px;
+    grid-template-rows: 635px;
   }
   .container-5 {
     display: grid;
@@ -731,7 +738,7 @@
 }
 @media (min-height: 891px) and (max-height: 896px) {
   .currencies {
-    grid-template-rows: 650px;
+    grid-template-rows: 640px;
   }
   .container-5 {
     display: grid;
@@ -749,7 +756,7 @@
 }
 @media (min-height: 897px) and (max-height: 905px) {
   .currencies {
-    grid-template-rows: 656px;
+    grid-template-rows: 645px;
   }
   .container-5 {
     display: grid;
@@ -767,7 +774,7 @@
 }
 @media (min-height: 906px) and (max-height: 912px) {
   .currencies {
-    grid-template-rows: 665px;
+    grid-template-rows: 650px;
   }
   .container-5 {
     display: grid;
@@ -785,7 +792,7 @@
 }
 @media (min-height: 913px) and (max-height: 920px) {
   .currencies {
-    grid-template-rows: 675px;
+    grid-template-rows: 655px;
   }
   .container-5 {
     display: grid;
