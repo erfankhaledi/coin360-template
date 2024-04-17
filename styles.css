@@ -83,6 +83,27 @@ nav ul li a:hover {
 .pointer {
     cursor: pointer;
 }
+.fs-btc {
+    font-size: 250px ;
+}
+.fs-btc-1 {
+    font-size: 80px;
+}
+.fs-btc-2 {
+    font-size: 50px;
+}
+.fs-btc-3 {
+    font-size: 22px;
+}
+.fs-doge {
+    font-size: 21px;
+}
+.fs-shib {
+    font-size: 21px;
+}
+.mt-5 {
+    margin-top: 5px;
+}
 .mr-1 {
     margin-right: 3px;
 }
@@ -1112,7 +1133,7 @@ main {
     width: auto;
     height: auto;
     border: 1px solid #000;
-    margin-top: 12px;
+    margin-top: 10px;
     grid-area: container-6;
     gap: 1px;
     grid-template-areas: 'doge doge doge doge doge shib shib shib shib shib'
